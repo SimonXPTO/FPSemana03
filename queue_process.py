@@ -6,6 +6,7 @@ palavras=deque(sepalavras.split())
 
 print(palavras)
 
-for i in palavras:
-    if "o" in i:
-        print(i)
+for i in range(len(palavras)):
+    elt= palavras.pop()
+    if "o" in elt:
+        print(elt)
