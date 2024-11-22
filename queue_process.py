@@ -1,8 +1,10 @@
 from collections import deque
 
 sepalavras=(input("palavras separadas: "))
-
-palavras=deque(sepalavras.split())
+pal=sepalavras.split()
+palavras=deque()
+for lt in pal:
+    palavras.appendleft(lt)
 
 print(palavras)
 
