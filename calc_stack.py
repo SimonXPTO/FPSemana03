@@ -1,11 +1,13 @@
 from collections import deque
 
 num = input("numeros inteiros separados: ")  
-
+stack = deque()
 
 numeros = num.split()
 
-stack = deque(numeros)
+for i in numeros:
+     a=int(i)
+     stack.append(a)
 
 print(stack)
 
